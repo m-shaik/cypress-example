@@ -10,14 +10,16 @@ describe('google home page', () => {
     })
 
     it('search for wikipedia', () => { 
-
-     cy.get('.gLFyf')
-        .type('wikipedia{enter}')
-
-        cy.contains('Wikipedia')
-        .click()
-        })
+     cy.get('.gLFyf').type('wikipedia{enter}')
+     cy.contains('Wikipedia').click()
     })
 
-    // it('se')
+    it.only('search for another serch term', () => {
+        cy.get('.gLFyf').type('amazon{enter}')
+        cy.contains('Amazon').click()
+    })
+})
+
+
+
 
