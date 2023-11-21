@@ -6,18 +6,18 @@ This project demonstrate
 
 DOM interation commands of cypress like
 
-cy.get(),
-cy.type(),
-promise resolve using .then()
-cy.click()
+- cy.get()
+- cy.type()
+- promise resolve using .then()
+- cy.click()
 
-also custom commnds
+- also custom commnds
 //created in support/commands.js
 cy.login()
 
-also demomstrate using the beforeEach hooks to remove duplication of code
+- also demomstrate using the beforeEach hooks to remove duplication of code
 
-how to run cypress tests
+# how to run cypress tests
 
 -  clone the project locally
 -  run 'npm install' on the root folder to install dependencies
