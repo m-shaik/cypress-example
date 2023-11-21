@@ -12,7 +12,7 @@ describe('login', () => {
     })
 
     it('unsuccessful login - error message', () => {
-        cy.login('test123@test1.com', 'test@1234')
+        cy.login('test123@test.com', 'test@1234')
         cy.get('.message-error > div')
         .should('contain.text', 'The account sign-in was incorrect or your account is disabled temporarily. Please wait and try again later.')
     })
